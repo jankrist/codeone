@@ -36,6 +36,7 @@ android {
 
 ext {
     SUPPORT_VERSION = '25.2.0'
+    PLAY_SERVICES_VERSION = '10.2.0'
 }
 
 dependencies {
@@ -48,6 +49,8 @@ dependencies {
     compile group: 'com.android.support', name: 'support-vector-drawable', version: SUPPORT_VERSION
 
     compile group: 'com.android.support.constraint', name: 'constraint-layout', version: '1.0.0-beta5'
+
+    compile group: 'com.google.android.gms', name: 'play-services-vision', version: PLAY_SERVICES_VERSION
 
     testCompile 'junit:junit:4.12'
 }
