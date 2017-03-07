@@ -10,9 +10,19 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        jackOptions {
+            enabled true
+        }
     }
 
-    dataBinding{
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
         enabled true
     }
 
@@ -24,7 +34,7 @@ android {
     }
 }
 
-ext{
+ext {
     SUPPORT_VERSION = '25.2.0'
 }
 
@@ -36,5 +46,8 @@ dependencies {
     compile group: 'com.android.support', name: 'appcompat-v7', version: SUPPORT_VERSION
     compile group: 'com.android.support', name: 'design', version: SUPPORT_VERSION
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:support-vector-drawable:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
     testCompile 'junit:junit:4.12'
 }
