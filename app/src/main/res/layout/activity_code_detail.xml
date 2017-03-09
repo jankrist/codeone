@@ -5,6 +5,13 @@
     android:padding="@dimen/page_padding_default"
     >
 
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="@dimen/qr_code_size"
+        android:layout_height="@dimen/qr_code_size"
+        android:layout_marginBottom="@dimen/paragraph_margin_bottom"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
